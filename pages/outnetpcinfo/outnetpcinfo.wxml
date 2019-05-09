@@ -1,0 +1,32 @@
+<!--view class="table">
+  <view class="tr bg-w">
+    <view class="th">房间号</view>
+    <view class="th">科室</view>
+    <view class="th">计算机名</view>
+    <view class="th">IP地址</view>
+    <view class="th">Mac地址</view>
+    <view class="th">使用人</view>
+    <view class="th">备注</view>    
+  </view>
+  <block wx:for="{{goldData}}" wx:key="this">
+    <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
+      <view class="td">{{item.roomnumber}}</view>
+      <view class="td">{{item.roomname}}</view>
+      <view class="td">{{item.pcname}}</view>
+      <view class="td">{{item.ipaddress}}</view>
+      <view class="td">{{item.macaddress}}</view>
+      <view class="td">{{item.user}}</view>
+      <view class="td">{{item.extramsg}}</view>      
+    </view>
+    <view class="tr" wx:else>
+      <view class="td">{{item.roomnumber}}</view>
+      <view class="td">{{item.roomname}}</view>
+      <view class="td">{{item.pcname}}</view>
+      <view class="td">{{item.ipaddress}}</view>
+      <view class="td">{{item.macaddress}}</view>
+      <view class="td">{{item.user}}</view>
+      <view class="td">{{item.extramsg}}</view>      
+    </view>
+  </block>
+</view-->
+待发布...

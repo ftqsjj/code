@@ -1,0 +1,22 @@
+<view class="table">
+  <view class="tr bg-w">
+    <view class="th">编号</view>
+    <view class="th">型号</view>
+    <view class="th">是否支持接投影</view>
+    <view class="th">是否可接usb鼠标</view>    
+  </view>
+  <block wx:for="{{goldData}}" wx:key="this">
+    <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
+      <view class="td">{{item.serialNo}}</view>
+      <view class="td">{{item.Model}}</view>
+      <view class="td">{{item.linkHDMI}}</view>
+      <view class="td">{{item.linkusb}}</view>     
+    </view>
+    <view class="tr" wx:else>
+      <view class="td">{{item.serialNo}}</view>
+      <view class="td">{{item.Model}}</view>
+      <view class="td">{{item.linkHDMI}}</view>
+      <view class="td">{{item.linkusb}}</view>      
+    </view>
+  </block>
+</view>

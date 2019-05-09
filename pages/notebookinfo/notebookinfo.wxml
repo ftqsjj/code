@@ -1,0 +1,31 @@
+<view class="table">
+  <view class="tr bg-w">
+    <view class="th">编号</view>
+    <view class="th">型号</view>
+    <view class="th">操作系统</view>
+    <view class="th">状态</view>
+    <view class="th">内存</view>
+    <view class="th">硬盘</view>
+    <view class="th">CPU</view>
+  </view>
+  <block wx:for="{{goldData}}" wx:key="this">
+    <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
+      <view class="td">{{item.SerialNo}}</view>
+      <view class="td">{{item.Model}}</view>
+      <view class="td">{{item.OperatingSystem}}</view>
+      <view class="td">{{item.Status}}</view>
+      <view class="td">{{item.ram}}</view>
+      <view class="td">{{item.harddisk}}</view>
+      <view class="td">{{item.CPU}}</view>
+    </view>
+    <view class="tr" wx:else>
+      <view class="td">{{item.SerialNo}}</view>
+      <view class="td">{{item.Model}}</view>
+      <view class="td">{{item.OperatingSystem}}</view>
+      <view class="td">{{item.Status}}</view>
+      <view class="td">{{item.ram}}</view>
+      <view class="td">{{item.harddisk}}</view>
+      <view class="td">{{item.CPU}}</view>
+    </view>
+  </block>
+</view>

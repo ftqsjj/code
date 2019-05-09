@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/notebookinfo/notebookinfo",
+    "pages/outnetpcinfo/outnetpcinfo"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "HiMsg信息查询",
+    "navigationBarTextStyle":"black"
+  }
+}

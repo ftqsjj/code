@@ -1,0 +1,56 @@
+<view class="table">
+  <view class="tr bg-w">
+    <view class="th">属性</view>
+    <view class="th-2">内容</view>
+  </view>
+  <block wx:for="{{goldData}}" wx:key="{{this}}">
+    <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
+      <view class="td-1" selectable="true">微信昵称</view>
+      <view class="td-2" selectable="true" scroll-y="true" >
+      <text class="th-text"  style="overflow-y:auto;overflow-x:scroll" selectable="true">{{item.nickname}}</text>
+      </view>
+    </view>
+    <view class="tr bg-g2" wx:if="{{index % 2 == 0}}">
+      <view class="td-1" selectable="true">姓名</view>
+      <view class="td-2" selectable="true" scroll-y="true" >
+      <text class="th-text"  style="overflow-y:auto;overflow-x:scroll" selectable="true">{{item.username}}</text>
+      </view>
+    </view>
+    <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
+      <view class="td-1" selectable="true">护照状态</view>
+      <view class="td-2" selectable="true" scroll-y="true" >
+      <text class="th-text"  style="overflow-y:auto;overflow-x:scroll" selectable="true">{{item.visastatus}}</text>
+      </view>
+    </view>
+    <view class="tr bg-g2" wx:if="{{index % 2 == 0}}">
+      <view class="td-1" selectable="true">护照编号</view>
+      <view class="td-2" selectable="true" scroll-y="true" >
+      <text class="th-text"  style="overflow-y:auto;overflow-x:scroll" selectable="true">{{item.visanumber}}</text>
+      </view>
+    </view>
+    <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
+      <view class="td-1" selectable="true">护照有效期</view>
+      <view class="td-2" selectable="true" scroll-y="true" >
+      <text class="th-text"  style="overflow-y:auto;overflow-x:scroll" selectable="true">{{item.visavalidity}}</text>
+      </view>
+    </view> 
+    <view class="tr bg-g2" wx:if="{{index % 2 == 0}}">
+      <view class="td-1" selectable="true">港澳通行证状态</view>
+      <view class="td-2" selectable="true" scroll-y="true" >
+      <text class="th-text"  style="overflow-y:auto;overflow-x:scroll" selectable="true">{{item.passportstatus}}</text>
+      </view>
+    </view>
+    <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
+      <view class="td-1" selectable="true">港澳通行证编号</view>
+      <view class="td-2" selectable="true" scroll-y="true" >
+      <text class="th-text"  style="overflow-y:auto;overflow-x:scroll" selectable="true">{{item.passportnumber}}</text>
+      </view>
+    </view>
+     <view class="tr bg-g2" wx:if="{{index % 2 == 0}}">
+      <view class="td-1" selectable="true">港澳通行证有效期</view>
+      <view class="td-2" selectable="true" scroll-y="true" >
+      <text class="th-text"  style="overflow-y:auto;overflow-x:scroll" selectable="true">{{item.passportvalidity}}</text>
+      </view>
+    </view> 
+  </block>
+</view>

@@ -1,0 +1,43 @@
+<view class="container"> 
+<view >
+  <text>当前时间：{{time}}</text>
+</view>
+ <view class="login-icon"> 
+ <image class="login-img" src="../images/ft.jpg"></image> 
+ </view> 
+ <view class="login-from"> 
+<view style='height:50px;'></view>
+ <view class="SearchNotebookView"> 
+ <button open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo"  type="primary" plain="{{plain}}" size="{{primarySize}}" disabled="{{disabled}}">待借笔记本电脑信息查询</button>
+ </view>
+ <view style='height:15px;'></view>
+  <view class="SearchcertifyView"> 
+ <button open-type="getUserInfo" bindgetuserinfo="bindGetLkhdmibotebookInfo"  type="primary" plain="{{plain}}" size="{{primarySize}}" disabled="{{disabled}}">可接投影笔记本信息查询</button>
+  </view>
+<view style='height:15px;'></view>
+ <view class="SearchcertifyView"> 
+ <button open-type="getUserInfo" bindgetuserinfo="bindGetCertifiInfo"  type="primary" plain="{{plain}}" size="{{primarySize}}" disabled="{{disabled}}">证件管理查询(港澳通行证/护照)</button>
+ </view>
+ <view style='height:15px;'></view>
+  <view class="SearchcertifyView"> 
+ <button open-type="getUserInfo" bindgetuserinfo="bindGetoutnetPCInfo"  type="primary" plain="{{plain}}" size="{{primarySize}}" disabled="{{disabled}}">内外网台式机信息查询</button>
+ </view>
+ <view style='height:15px;'></view>
+ <view class="SearchcertifyView"> 
+ <button open-type="getUserInfo" bindgetuserinfo="bindGetinnernetPCInfo"  type="primary" plain="{{plain}}" size="{{primarySize}}" disabled="{{disabled}}">数据管理相关信息查询</button>
+ </view>
+ <!--view style='height:15px;'></view>
+ <view class="SearchcertifyView"> 
+ <button open-type="getUserInfo" bindgetuserinfo="bindGetPCInfo"  type="primary" plain="{{plain}}" size="{{primarySize}}" disabled="{{disabled}}">外网服务器数据管理</button>
+ </view>
+  <view style='height:15px;'></view>
+ <view class="SearchcertifyView"> 
+ <button open-type="getUserInfo" bindgetuserinfo="bindGetPCInfo"  type="primary" plain="{{plain}}" size="{{primarySize}}" disabled="{{disabled}}">内网服务器数据管理</button>
+ </view>
+  <view style='height:15px;'></view>
+ <view class="SearchcertifyView"> 
+ <button open-type="getUserInfo" bindgetuserinfo="bindGetPCInfo"  type="primary" plain="{{plain}}" size="{{primarySize}}" disabled="{{disabled}}">数据备份管理</button>
+ </view>
+ <view style='height:25px;'></view-->
+ </view> 
+</view>
